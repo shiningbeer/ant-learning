@@ -1,5 +1,9 @@
 export default {
   'menu.home': '首页',
+  'menu.task': '任务管理',
+  'menu.task.receive': '任务接收',
+  'menu.task.distribute': '任务下达',
+  'menu.task.list': '任务列表',
   'menu.dashboard': 'Dashboard',
   'menu.dashboard.analysis': '分析页',
   'menu.dashboard.monitor': '监控页',

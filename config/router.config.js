@@ -17,8 +17,35 @@ export default [
     Routes: ['src/pages/Authorized'],
     authority: ['admin', 'user'],
     routes: [
-      // dashboard
       { path: '/', redirect: '/dashboard/analysis' },
+      //task
+      {
+        path: '/task',
+        name: 'task',
+        icon: 'dashboard',
+        routes: [
+          {
+            path: '/task/receive',
+            name: 'receive',
+            icon: 'check-circle-o',
+            component: './task/list',
+          },
+          {
+            path: '/task/distribute',
+            name: 'distribute',
+            icon: 'form',
+            component: './task/list',
+          },
+          {
+            path: '/task/list',
+            name: 'list',
+            icon: 'table',
+            component: './task/list',
+          },
+        ],
+      },
+
+      // dashboard
       {
         path: '/dashboard',
         name: 'dashboard',
